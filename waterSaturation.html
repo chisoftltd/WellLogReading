@@ -1,0 +1,48 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>WATER SATURATION</title>
+        <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/welllog-style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    </head>
+    <body id="page5">
+        <div id="header"></div>
+        <main>
+            <div class="info-box">
+                <h1>Water Saturation (Sw) Calculation</h1>
+            </div>
+            <div id="aside"></div>
+            <section id="recipe_above">
+                <figure>
+                    <img src="Water Saturation.png" alt="Water Saturation">
+                    <h2>Water Saturation (Sw) Calculation</h2>
+                </figure>
+                <h2>Water Saturation (Sw) Calculation</h2>
+                <p>Porosity</p>
+                <input type="number" id="porosity" min="0" max="1" step="0.01" value="0">
+                <p>Water Resistivity</p>
+                <input type="number" id="waterRe" min="0" max="1" step="0.001" value="0">
+                <p>True Resistivity</p>
+                <input type="number" id="trueRe" min="0.2" max="2000" step="0.1" value="0">
+                <p>Tortursity factor (a)</p>
+                <input type="number" id="tortursity" min="0" max="5" step="0.1" value="0">
+                <p><strong>m = n = 2</strong></p>
+                <button onclick="waterFunction()">calculate</button>
+                <p id="select_a_portion"><strong>Water Saturation (Sw):</strong> </p>
+                <p id="water"></p>
+                <img src="Water Saturation formula.png" alt="Water Saturation formula">
+                <h2>Water Saturation formula</h2>
+            </section>
+
+        </main>
+        <div id="footer"></div>
+        <script type="text/javascript" src="js/script.js"></script>
+     
+    </body>
+</html>
